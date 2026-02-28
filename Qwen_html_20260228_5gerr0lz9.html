@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Список зарегистрированных сайтов</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: #333;
+      line-height: 1.6;
+      padding: 20px;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+    }
+
+    header {
+      background: #4a5568;
+      color: white;
+      padding: 24px 30px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      margin-bottom: 8px;
+    }
+
+    header p {
+      opacity: 0.9;
+      font-size: 1rem;
+    }
+
+    .content {
+      padding: 25px 30px;
+    }
+
+    .intro {
+      background: #f7fafc;
+      border-left: 4px solid #667eea;
+      padding: 15px 20px;
+      margin-bottom: 25px;
+      border-radius: 0 8px 8px 0;
+      font-size: 0.95rem;
+    }
+
+    .sites-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 12px;
+    }
+
+    .site-card {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      padding: 14px 16px;
+      transition: all 0.2s ease;
+      text-align: center;
+    }
+
+    .site-card:hover {
+      border-color: #667eea;
+      box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15);
+      transform: translateY(-2px);
+    }
+
+    .site-card a {
+      color: #2d3748;
+      text-decoration: none;
+      font-weight: 500;
+      word-break: break-all;
+      display: block;
+    }
+
+    .site-card a:hover {
+      color: #667eea;
+    }
+
+    .site-card a::before {
+      content: "🔗 ";
+      margin-right: 4px;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background: #f7fafc;
+      color: #718096;
+      font-size: 0.9rem;
+      border-top: 1px solid #e2e8f0;
+    }
+
+    .count-badge {
+      display: inline-block;
+      background: #667eea;
+      color: white;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      margin-top: 10px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.4rem;
+      }
+      .sites-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📋 Сайты с обнаруженной регистрацией</h1>
+      <p>Ниже приведены сайты, на которых обнаружена активность или регистрация</p>
+      <span class="count-badge">Всего: 24 сайта</span>
+    </header>
+
+    <div class="content">
+      <div class="intro">
+        <strong>ℹ️ Примечание:</strong> Список сформирован автоматически. 
+        Рекомендуется периодически проверять актуальность данных и при необходимости удалять устаревшие аккаунты.
+      </div>
+
+      <div class="sites-grid">
+        <div class="site-card"><a href="https://propostuplenie.ru" target="_blank" rel="noopener">propostuplenie.ru</a></div>
+        <div class="site-card"><a href="https://dpd.ru" target="_blank" rel="noopener">dpd.ru</a></div>
+        <div class="site-card"><a href="https://aloeapteka.ru" target="_blank" rel="noopener">aloeapteka.ru</a></div>
+        <div class="site-card"><a href="https://chitai-gorod.ru" target="_blank" rel="noopener">chitai-gorod.ru</a></div>
+        <div class="site-card"><a href="https://gosuslugi.ru" target="_blank" rel="noopener">gosuslugi.ru</a></div>
+        <div class="site-card"><a href="https://koshelek.app" target="_blank" rel="noopener">koshelek.app</a></div>
+        <div class="site-card"><a href="https://youla.ru" target="_blank" rel="noopener">youla.ru</a></div>
+        <div class="site-card"><a href="https://mail.ru" target="_blank" rel="noopener">mail.ru</a></div>
+        <div class="site-card"><a href="https://zoloto585.ru" target="_blank" rel="noopener">zoloto585.ru</a></div>
+        <div class="site-card"><a href="https://stolplit.ru" target="_blank" rel="noopener">stolplit.ru</a></div>
+        <div class="site-card"><a href="https://tvoe.ru" target="_blank" rel="noopener">tvoe.ru</a></div>
+        <div class="site-card"><a href="https://dobro.ru" target="_blank" rel="noopener">dobro.ru</a></div>
+        <div class="site-card"><a href="https://gloria-jeans.ru" target="_blank" rel="noopener">gloria-jeans.ru</a></div>
+        <div class="site-card"><a href="https://dns-shop.ru" target="_blank" rel="noopener">dns-shop.ru</a></div>
+        <div class="site-card"><a href="https://bonusplus.pro" target="_blank" rel="noopener">bonusplus.pro</a></div>
+        <div class="site-card"><a href="https://kari.com" target="_blank" rel="noopener">kari.com</a></div>
+        <div class="site-card"><a href="https://lukoil.ru" target="_blank" rel="noopener">lukoil.ru</a></div>
+        <div class="site-card"><a href="https://cdek.ru" target="_blank" rel="noopener">cdek.ru</a></div>
+        <div class="site-card"><a href="https://spasibosberbank.ru" target="_blank" rel="noopener">spasibosberbank.ru</a></div>
+        <div class="site-card"><a href="https://avito.ru" target="_blank" rel="noopener">avito.ru</a></div>
+        <div class="site-card"><a href="https://yandex.ru" target="_blank" rel="noopener">yandex.ru</a></div>
+        <div class="site-card"><a href="https://sportmaster.ru" target="_blank" rel="noopener">sportmaster.ru</a></div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>🔐 Рекомендуется использовать надёжные пароли и двухфакторную аутентификацию</p>
+      <p style="margin-top: 8px; font-size: 0.85rem;">Последнее обновление: <span id="update-date"></span></p>
+    </div>
+  </div>
+
+  <script>
+    // Автоматически подставляем дату обновления
+    document.getElementById('update-date').textContent = new Date().toLocaleDateString('ru-RU', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric'
+    });
+  </script>
+</body>
+</html>
